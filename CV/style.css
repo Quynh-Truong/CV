@@ -47,14 +47,9 @@ body ul li {
 /* --------------------INDEX/ABOUT----------------------- */
  .content {
     display: flex;
-    
-    align-items: flex-end;
+    justify-content: center;
  }
 
- .text {
-    flex: 1;
-    margin-right: 0rem;
- }
 
 .quynh {
     color: #601F32;
@@ -144,7 +139,10 @@ nav a:focus {
 .ham-menu {
     display: none;
     margin-top: 10%;
+    cursor: pointer; /* Won't work */
 }
+
+
 
 /* -----------------EXPERIENCE/EDUCATION------------------ */
 .date {
@@ -205,30 +203,43 @@ nav a:focus {
 
 /* --------------------------PORTFOLIO--------------------- */
 .portfolio {
+
+    font-family: "Roboto Slab", Georgia, serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project1,
+.project2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 2rem;
-    font-family: "Roboto Slab", Georgia, serif;
+    width: 40vw;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 1rem;
+    margin: 1rem;
 }
 
 .portfolio a {
     text-decoration: none;
     color: black;
-    margin-bottom: 2em;
+    margin-bottom: 0em;
 }
 
 .portfolio h3 {
-    margin-top: 0rem;
+    margin-bottom: 1rem;
 }
 
 .musiccat,
 .laptop {
-    display: block;
     max-width: 40vw;
     height: auto;
     border-radius: 10px;
+    margin-bottom: 1rem;
 }
 
 
@@ -345,6 +356,15 @@ footer h3 {
     font-family: Roboto, Arial, sans-serif;
     text-align: center;
 }
+
+footer .envelope:hover,
+footer .envelope:focus,
+footer .linkedin:hover,
+footer .linkedin:focus {
+    background-color: #127D67;
+}
+
+
 
 @media (max-width: 650px) {
     .ham-menu {
