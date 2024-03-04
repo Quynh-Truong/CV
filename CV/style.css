@@ -23,6 +23,10 @@ body {
     /* //----    ----DARKMODE  ----    ----// */
     transition: background-color 0.5s ease;
     background-color: white;
+
+/*  everybody says to use this to remove horisontal scrolling, it helps, but did not remove it*/
+
+    overflow-x: hidden;
 }
 
 .dark-mode {
@@ -154,40 +158,40 @@ nav a:focus {
 }
 
 
-
 .experience .col1,
 .experience .col2 {
     flex: 1;
-    padding: 1rem;
 }
 
 
 
 .experience .col2 p,
 .education .col2 p {
-    margin: 0.2rem;
+    margin: 1%;
 }
 
 
 .glasses {
-    display: block;
+    display: flex;
+
     max-width: 100%;
     height: auto;
+    margin-top: 8%;
 }
 
 .experience .col2 h3,
 .education .col2 h3 {
-    margin-top: 1rem;
+    margin-top: 0%;
 } 
 
 .experience .col2,
 .education .col2 {
     list-style-type: none;
-    padding: 1rem;
+    padding: 1%;
 }
 
 .education {
-    padding: 1rem 5rem;
+/*     padding: 1rem 5rem; */
     display: flex;
 }
 
@@ -299,7 +303,7 @@ nav a:focus {
 /* ----------------------CONTACT------------------ */
 .hello{
 
-    max-width: 70vh;
+    max-width: 100%;
     height: auto;
     display: flex;
     justify-content: center;
@@ -318,6 +322,7 @@ nav a:focus {
 .best {
     color: #127D67;
 }
+
 
 
 /* -------------------------------------FOOTER--------------------------- */
@@ -472,3 +477,4 @@ footer .linkedin:focus {
         display: none;
     }
 }
+
