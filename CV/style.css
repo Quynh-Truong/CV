@@ -19,14 +19,11 @@ p {
 }
 
 body {
-    padding: 1.5rem;
+    padding: 2rem;/* fixed rollbar */
     /* //----    ----DARKMODE  ----    ----// */
     transition: background-color 0.5s ease;
     background-color: white;
 
-/*  everybody says to use this to remove horisontal scrolling, it helps, but did not remove it*/
-
-    overflow-x: hidden;
 }
 
 .dark-mode {
@@ -44,7 +41,7 @@ body p {
 
 body ul li {
     list-style-type: none;
-    margin: 1rem;
+/*     margin: 1rem; */
 }
 
 
@@ -52,6 +49,7 @@ body ul li {
  .content {
     display: flex;
     justify-content: center;
+    padding: 5rem;
  }
 
 
@@ -167,7 +165,7 @@ nav a:focus {
 
 .experience .col2 p,
 .education .col2 p {
-    margin: 1%;
+    margin: 0.4rem;
 }
 
 
@@ -176,23 +174,27 @@ nav a:focus {
 
     max-width: 100%;
     height: auto;
-    margin-top: 8%;
+    margin-top: 2rem;
 }
 
 .experience .col2 h3,
 .education .col2 h3 {
-    margin-top: 0%;
+    margin-top: 0rem;
 } 
 
 .experience .col2,
 .education .col2 {
     list-style-type: none;
-    padding: 1%;
+    padding: 1rem;
 }
 
 .education {
-/*     padding: 1rem 5rem; */
+    padding: 1rem 3rem;
     display: flex;
+}
+
+.education li {
+    padding: 0.5rem;
 }
 
 .education .col1 {
